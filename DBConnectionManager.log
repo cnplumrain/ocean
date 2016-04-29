@@ -1,0 +1,65 @@
+Fri Apr 29 11:49:12 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Fri Apr 29 11:56:39 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Fri Apr 29 12:01:51 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Fri Apr 29 12:02:46 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Fri Apr 29 13:20:15 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Fri Apr 29 13:20:15 CST 2016: 成功创建连接池db1
+Fri Apr 29 13:49:07 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Fri Apr 29 13:49:07 CST 2016: 成功创建连接池db1
+Fri Apr 29 13:49:07 CST 2016: 无法创建下列URL的连接: jdbc:sqlserver://127.0.0.1:1433;databaseName=ocean
+com.microsoft.sqlserver.jdbc.SQLServerException: 用户 '' 登录失败。
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:197)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:246)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:83)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:2529)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:1905)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.access$000(SQLServerConnection.java:41)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:1893)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:4575)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1400)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1045)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:817)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:700)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:842)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at DBConnectionManager$DBConnectionPool.newConnection(DBConnectionManager.java:427)
+	at DBConnectionManager$DBConnectionPool.returnConnection(DBConnectionManager.java:334)
+	at DBConnectionManager.getConnection(DBConnectionManager.java:73)
+	at ConnTest.main(ConnTest.java:10)
+Fri Apr 29 13:53:39 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Fri Apr 29 13:53:39 CST 2016: 成功创建连接池db1
+Fri Apr 29 13:53:39 CST 2016: 连接池db1创建一个新的连接
+Fri Apr 29 13:56:27 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Fri Apr 29 13:56:27 CST 2016: 成功创建连接池db1
+Fri Apr 29 13:56:28 CST 2016: 连接池db1创建一个新的连接
+Fri Apr 29 13:56:28 CST 2016: 连接池db1创建一个新的连接
+Fri Apr 29 13:57:59 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Fri Apr 29 13:57:59 CST 2016: 成功创建连接池db1
+Fri Apr 29 13:57:59 CST 2016: 成功创建连接池db2
+Fri Apr 29 13:57:59 CST 2016: 连接池db1创建一个新的连接
+Fri Apr 29 13:57:59 CST 2016: 连接池db2创建一个新的连接
+Fri Apr 29 13:58:34 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Fri Apr 29 13:58:34 CST 2016: 成功创建连接池db1
+Fri Apr 29 13:58:34 CST 2016: 成功创建连接池db2
+Fri Apr 29 13:58:34 CST 2016: 连接池db1创建一个新的连接
+Fri Apr 29 13:58:34 CST 2016: 连接池db2创建一个新的连接
+Fri Apr 29 13:59:59 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Fri Apr 29 13:59:59 CST 2016: 成功创建连接池db1
+Fri Apr 29 13:59:59 CST 2016: 成功创建连接池db2
+Fri Apr 29 13:59:59 CST 2016: 连接池db1创建一个新的连接
+Fri Apr 29 13:59:59 CST 2016: 连接池db2创建一个新的连接
+Fri Apr 29 13:59:59 CST 2016: 连接池db2创建一个新的连接
+Fri Apr 29 14:08:54 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Fri Apr 29 14:08:54 CST 2016: 成功创建连接池db1
+Fri Apr 29 14:08:54 CST 2016: 成功创建连接池db2
+Fri Apr 29 14:08:54 CST 2016: 连接池db1创建一个新的连接
+Fri Apr 29 14:08:54 CST 2016: 连接池db2创建一个新的连接
+Fri Apr 29 14:08:54 CST 2016: 连接池db2创建一个新的连接
+Fri Apr 29 14:14:50 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Fri Apr 29 14:14:50 CST 2016: 成功创建连接池db1
+Fri Apr 29 14:14:50 CST 2016: 成功创建连接池db2
+Fri Apr 29 14:14:51 CST 2016: 连接池db1创建一个新的连接
+Fri Apr 29 14:14:51 CST 2016: 连接池db2创建一个新的连接
+Fri Apr 29 14:14:51 CST 2016: 连接池db2创建一个新的连接
+Fri Apr 29 14:14:51 CST 2016: 撤销JDBC驱动程序 com.microsoft.sqlserver.jdbc.SQLServerDriver的注册
