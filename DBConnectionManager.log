@@ -63,3 +63,140 @@ Fri Apr 29 14:14:51 CST 2016: 连接池db1创建一个新的连接
 Fri Apr 29 14:14:51 CST 2016: 连接池db2创建一个新的连接
 Fri Apr 29 14:14:51 CST 2016: 连接池db2创建一个新的连接
 Fri Apr 29 14:14:51 CST 2016: 撤销JDBC驱动程序 com.microsoft.sqlserver.jdbc.SQLServerDriver的注册
+Tue May 03 13:30:47 CST 2016: 无法注册JDBC驱动程序: com.microsoft.sqlserver.jdbc.SQLServerDriver, 错误: java.lang.ClassNotFoundException: com.microsoft.sqlserver.jdbc.SQLServerDriver
+Tue May 03 13:30:47 CST 2016: 成功创建连接池db1
+Tue May 03 13:30:47 CST 2016: 成功创建连接池db2
+Tue May 03 13:30:47 CST 2016: 无法创建下列URL的连接: jdbc:sqlserver://127.0.0.1:1433;databaseName=ocean
+java.sql.SQLException: No suitable driver found for jdbc:sqlserver://127.0.0.1:1433;databaseName=ocean
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at DBConnectionManager$DBConnectionPool.newConnection(DBConnectionManager.java:432)
+	at DBConnectionManager$DBConnectionPool.returnConnection(DBConnectionManager.java:337)
+	at DBConnectionManager.getConnection(DBConnectionManager.java:73)
+	at ConnTest.main(ConnTest.java:10)
+Tue May 03 13:30:47 CST 2016: 无法创建下列URL的连接: jdbc:sqlserver://99.9.25.75:1433;databaseName=ocean
+java.sql.SQLException: No suitable driver found for jdbc:sqlserver://99.9.25.75:1433;databaseName=ocean
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at DBConnectionManager$DBConnectionPool.newConnection(DBConnectionManager.java:432)
+	at DBConnectionManager$DBConnectionPool.returnConnection(DBConnectionManager.java:337)
+	at DBConnectionManager.getConnection(DBConnectionManager.java:73)
+	at ConnTest.main(ConnTest.java:11)
+Tue May 03 13:30:47 CST 2016: 无法创建下列URL的连接: jdbc:sqlserver://99.9.25.75:1433;databaseName=ocean
+java.sql.SQLException: No suitable driver found for jdbc:sqlserver://99.9.25.75:1433;databaseName=ocean
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at DBConnectionManager$DBConnectionPool.newConnection(DBConnectionManager.java:432)
+	at DBConnectionManager$DBConnectionPool.returnConnection(DBConnectionManager.java:337)
+	at DBConnectionManager.getConnection(DBConnectionManager.java:73)
+	at ConnTest.main(ConnTest.java:12)
+Tue May 03 13:34:58 CST 2016: 无法注册JDBC驱动程序: com.microsoft.sqlserver.jdbc.SQLServerDriver, 错误: java.lang.ClassNotFoundException: com.microsoft.sqlserver.jdbc.SQLServerDriver
+Tue May 03 13:34:58 CST 2016: 成功创建连接池db1
+Tue May 03 13:34:58 CST 2016: 成功创建连接池db2
+Tue May 03 13:34:58 CST 2016: 无法创建下列URL的连接: jdbc:sqlserver://127.0.0.1:1433;databaseName=ocean
+java.sql.SQLException: No suitable driver found for jdbc:sqlserver://127.0.0.1:1433;databaseName=ocean
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at DBConnectionManager$DBConnectionPool.newConnection(DBConnectionManager.java:432)
+	at DBConnectionManager$DBConnectionPool.returnConnection(DBConnectionManager.java:337)
+	at DBConnectionManager.getConnection(DBConnectionManager.java:73)
+	at ConnTest.main(ConnTest.java:10)
+Tue May 03 13:34:58 CST 2016: 无法创建下列URL的连接: jdbc:sqlserver://99.9.25.75:1433;databaseName=ocean
+java.sql.SQLException: No suitable driver found for jdbc:sqlserver://99.9.25.75:1433;databaseName=ocean
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at DBConnectionManager$DBConnectionPool.newConnection(DBConnectionManager.java:432)
+	at DBConnectionManager$DBConnectionPool.returnConnection(DBConnectionManager.java:337)
+	at DBConnectionManager.getConnection(DBConnectionManager.java:73)
+	at ConnTest.main(ConnTest.java:11)
+Tue May 03 13:34:58 CST 2016: 无法创建下列URL的连接: jdbc:sqlserver://99.9.25.75:1433;databaseName=ocean
+java.sql.SQLException: No suitable driver found for jdbc:sqlserver://99.9.25.75:1433;databaseName=ocean
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at DBConnectionManager$DBConnectionPool.newConnection(DBConnectionManager.java:432)
+	at DBConnectionManager$DBConnectionPool.returnConnection(DBConnectionManager.java:337)
+	at DBConnectionManager.getConnection(DBConnectionManager.java:73)
+	at ConnTest.main(ConnTest.java:12)
+Tue May 03 13:35:53 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Tue May 03 13:35:53 CST 2016: 成功创建连接池db1
+Tue May 03 13:35:53 CST 2016: 成功创建连接池db2
+Tue May 03 13:35:53 CST 2016: 连接池db1创建一个新的连接
+Tue May 03 13:35:53 CST 2016: 连接池db2创建一个新的连接
+Tue May 03 13:35:53 CST 2016: 连接池db2创建一个新的连接
+Tue May 03 13:35:53 CST 2016: 撤销JDBC驱动程序 com.microsoft.sqlserver.jdbc.SQLServerDriver的注册
+Tue May 03 15:21:11 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Tue May 03 15:21:11 CST 2016: 成功创建连接池db1
+Tue May 03 15:21:11 CST 2016: 成功创建连接池db2
+Tue May 03 15:21:11 CST 2016: 连接池db1创建一个新的连接
+Tue May 03 15:21:11 CST 2016: 无法创建下列URL的连接: jdbc:sqlserver:qxw1194230261.my3w.com;databaseName=qds159897288_db
+java.sql.SQLException: No suitable driver found for jdbc:sqlserver:qxw1194230261.my3w.com;databaseName=qds159897288_db
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at DBConnectionManager$DBConnectionPool.newConnection(DBConnectionManager.java:432)
+	at DBConnectionManager$DBConnectionPool.returnConnection(DBConnectionManager.java:337)
+	at DBConnectionManager.getConnection(DBConnectionManager.java:73)
+	at ConnTest.main(ConnTest.java:11)
+Tue May 03 15:21:11 CST 2016: 无法创建下列URL的连接: jdbc:sqlserver:qxw1194230261.my3w.com;databaseName=qds159897288_db
+java.sql.SQLException: No suitable driver found for jdbc:sqlserver:qxw1194230261.my3w.com;databaseName=qds159897288_db
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at DBConnectionManager$DBConnectionPool.newConnection(DBConnectionManager.java:432)
+	at DBConnectionManager$DBConnectionPool.returnConnection(DBConnectionManager.java:337)
+	at DBConnectionManager.getConnection(DBConnectionManager.java:73)
+	at ConnTest.main(ConnTest.java:12)
+Tue May 03 15:21:11 CST 2016: 撤销JDBC驱动程序 com.microsoft.sqlserver.jdbc.SQLServerDriver的注册
+Tue May 03 15:27:15 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Tue May 03 15:27:15 CST 2016: 成功创建连接池db1
+Tue May 03 15:27:15 CST 2016: 成功创建连接池db2
+Tue May 03 15:27:16 CST 2016: 连接池db1创建一个新的连接
+Tue May 03 15:27:16 CST 2016: 无法创建下列URL的连接: jdbc:sqlserver:qds159897288.my3w.com;databaseName=qds159897288_db
+java.sql.SQLException: No suitable driver found for jdbc:sqlserver:qds159897288.my3w.com;databaseName=qds159897288_db
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at DBConnectionManager$DBConnectionPool.newConnection(DBConnectionManager.java:432)
+	at DBConnectionManager$DBConnectionPool.returnConnection(DBConnectionManager.java:337)
+	at DBConnectionManager.getConnection(DBConnectionManager.java:73)
+	at ConnTest.main(ConnTest.java:11)
+Tue May 03 15:27:16 CST 2016: 无法创建下列URL的连接: jdbc:sqlserver:qds159897288.my3w.com;databaseName=qds159897288_db
+java.sql.SQLException: No suitable driver found for jdbc:sqlserver:qds159897288.my3w.com;databaseName=qds159897288_db
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at DBConnectionManager$DBConnectionPool.newConnection(DBConnectionManager.java:432)
+	at DBConnectionManager$DBConnectionPool.returnConnection(DBConnectionManager.java:337)
+	at DBConnectionManager.getConnection(DBConnectionManager.java:73)
+	at ConnTest.main(ConnTest.java:12)
+Tue May 03 15:27:16 CST 2016: 撤销JDBC驱动程序 com.microsoft.sqlserver.jdbc.SQLServerDriver的注册
+Tue May 03 15:38:20 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Tue May 03 15:38:20 CST 2016: 成功创建连接池db1
+Tue May 03 15:38:20 CST 2016: 成功创建连接池db2
+Tue May 03 15:38:20 CST 2016: 连接池db1创建一个新的连接
+Tue May 03 15:38:20 CST 2016: 无法创建下列URL的连接: jdbc:sqlserver:qds159897288.my3w.com;databaseName=qds159897288_db
+java.sql.SQLException: No suitable driver found for jdbc:sqlserver:qds159897288.my3w.com;databaseName=qds159897288_db
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at DBConnectionManager$DBConnectionPool.newConnection(DBConnectionManager.java:432)
+	at DBConnectionManager$DBConnectionPool.returnConnection(DBConnectionManager.java:337)
+	at DBConnectionManager.getConnection(DBConnectionManager.java:73)
+	at ConnTest.main(ConnTest.java:11)
+Tue May 03 15:38:20 CST 2016: 无法创建下列URL的连接: jdbc:sqlserver:qds159897288.my3w.com;databaseName=qds159897288_db
+java.sql.SQLException: No suitable driver found for jdbc:sqlserver:qds159897288.my3w.com;databaseName=qds159897288_db
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at DBConnectionManager$DBConnectionPool.newConnection(DBConnectionManager.java:432)
+	at DBConnectionManager$DBConnectionPool.returnConnection(DBConnectionManager.java:337)
+	at DBConnectionManager.getConnection(DBConnectionManager.java:73)
+	at ConnTest.main(ConnTest.java:12)
+Tue May 03 15:38:20 CST 2016: 撤销JDBC驱动程序 com.microsoft.sqlserver.jdbc.SQLServerDriver的注册
+Tue May 03 15:39:57 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Tue May 03 15:39:57 CST 2016: 成功创建连接池db1
+Tue May 03 15:39:57 CST 2016: 成功创建连接池db2
+Tue May 03 15:39:58 CST 2016: 连接池db1创建一个新的连接
+Tue May 03 15:39:58 CST 2016: 连接池db2创建一个新的连接
+Tue May 03 15:40:00 CST 2016: 连接池db2创建一个新的连接
+Tue May 03 15:40:00 CST 2016: 撤销JDBC驱动程序 com.microsoft.sqlserver.jdbc.SQLServerDriver的注册
+Tue May 03 15:46:30 CST 2016: 成功注册JDBC驱动程序com.microsoft.sqlserver.jdbc.SQLServerDriver
+Tue May 03 15:46:30 CST 2016: 成功创建连接池db1
+Tue May 03 15:46:30 CST 2016: 成功创建连接池db2
+Tue May 03 15:50:21 CST 2016: 连接池db1创建一个新的连接
+Tue May 03 15:50:45 CST 2016: 连接池db2创建一个新的连接
+Tue May 03 15:51:39 CST 2016: 连接池db2创建一个新的连接

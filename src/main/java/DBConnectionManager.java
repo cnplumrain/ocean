@@ -228,6 +228,8 @@ public class DBConnectionManager {
   e.printStackTrace(log);
  }
 
+ 
+ 
  /**
   * 类DBConnectionPool的作用：
   * 从连接池获取（或创建）可用连接。 
