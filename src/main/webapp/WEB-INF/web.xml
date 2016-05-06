@@ -43,10 +43,24 @@
             <param-value>/WEB-INF/ocean-servlet.xml</param-value>  
         </init-param>  
         <load-on-startup>1</load-on-startup>  
+    </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>Init</display-name>
+    	<servlet-name>Init</servlet-name>
+    	<servlet-class>c.Init</servlet-class>
+    	<load-on-startup>4</load-on-startup>
     </servlet>  
     <servlet-mapping>  
         <servlet-name>ocean</servlet-name>  
         <url-pattern>*.html</url-pattern>  
-    </servlet-mapping>  
+    </servlet-mapping>
+    <!--  
+    <servlet-mapping>
+    	<servlet-name>Init</servlet-name>
+    	<url-pattern>/Init</url-pattern>
+    </servlet-mapping> 
+	-->
 
 </web-app>

@@ -12,4 +12,5 @@ public class GeneralController {
 		model.addAttribute("test","Hello Ocean!");
 		System.out.println("index.jsp");
 	}
+	
 }

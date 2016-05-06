@@ -12,5 +12,6 @@
 		<input type="text" placeholder="密码" />
 		<button type="submit">登录</button>
 	</form>
+	${users}
 </body>
 </html>

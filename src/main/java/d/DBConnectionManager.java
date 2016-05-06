@@ -1,3 +1,4 @@
+package d;
 /**
  * 管理类DBConnectionManager支持对一个或多个由属性文件定义的数据库连接池的访问。
  * 客户程序可以调用getInstance()方法访问本类的唯一实例。
@@ -158,14 +159,11 @@ public class DBConnectionManager {
  private void init() {
   try {
    //   Properties p = new Properties();
-   String configs = System.getProperty("user.dir")
-     + "\\src\\main\\resources\\config\\jdbc.properties";
-
-   System.out.println("configs file local at " + configs);
-   
+   String fileName = "jdbc.properties";
+   String path = Thread.currentThread().getContextClassLoader().getResource("").getPath();
    Properties dbProps = new Properties();
    try {
-	   FileInputStream is = new FileInputStream(configs);
+	   FileInputStream is = new FileInputStream(path+fileName);
 	   dbProps.load(is);
    } catch (Exception e) {
     System.err.println("不能读取属性文件. "
@@ -186,6 +184,7 @@ public class DBConnectionManager {
    createPools(dbProps);
 
   } catch (Exception e) {
+	  System.out.println("DBConnectionManager.init()属性文件初始化失败!");
   }
  }
 
@@ -197,18 +196,20 @@ public class DBConnectionManager {
   */
  private void loadDrivers(Properties props) {
   String driverClasses = props.getProperty("drivers");
-  StringTokenizer st = new StringTokenizer(driverClasses);
+  StringTokenizer st = new StringTokenizer(driverClasses,";");
   while (st.hasMoreElements()) {
    String driverClassName = st.nextToken().trim();
    try {
-    Driver driver = (Driver) Class.forName(driverClassName)
-      .newInstance();
-    DriverManager.registerDriver(driver);
-    drivers.addElement(driver);
-    System.out.println(driverClassName);
+	   Driver driver = (Driver) Class.forName(driverClassName)
+			   .newInstance();
+	   DriverManager.registerDriver(driver);
+	   drivers.addElement(driver);
+	   
     log("成功注册JDBC驱动程序" + driverClassName);
+    System.out.println("成功注册JDBC驱动程序" + driverClassName);
    } catch (Exception e) {
     log("无法注册JDBC驱动程序: " + driverClassName + ", 错误: " + e);
+    System.out.println("无法注册JDBC驱动程序: " + driverClassName + ", 错误: " + e);
    }
   }
  }
@@ -432,9 +433,10 @@ public class DBConnectionManager {
      con = DriverManager.getConnection(URL, user, password);
     }
     log("连接池" + name + "创建一个新的连接");
-
+    System.out.println("连接池" + name + "创建一个新的连接");
    } catch (SQLException e) {
     log(e, "无法创建下列URL的连接: " + URL);
+    System.out.println(e+"无法创建下列URL的连接: " + URL);
     return null;
    }
    return con;
