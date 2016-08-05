@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class GeneralController {
 
-	@RequestMapping(value="index.html")
+	@RequestMapping(value="index")
 	public void index(Model model){
 		model.addAttribute("test","Hello Ocean!");
 		System.out.println("index.jsp");

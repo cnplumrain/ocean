@@ -7,8 +7,12 @@
         <title>Insert title here</title>  
     </head>  
       
-    <body>  
-        <c:out value="${test}"></c:out>  
-        <input type="text" value="${test}"/>
+    <body>
+    	<form method="post" action="registerP">
+        <input type="text" name="UserName" placeholder="用户名" value="">
+        <input type="password" name="Password" placeholder="密码" value="">
+        <input type="submit" value="确定">
+        </form>
+     	${user.UserName}
     </body>  
 </html>  
